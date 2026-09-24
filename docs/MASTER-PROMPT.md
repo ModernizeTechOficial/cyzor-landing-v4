@@ -46,6 +46,10 @@ Lime is an activation/signal/intelligence/CTA color, not a general decoration.
 
 ## NON-NEGOTIABLE PROCESS
 
+**END-TO-END EXECUTION:** This is a continuous workflow. Intermediate approvals/checkpoints are validation gates, NOT stopping points. After each phase passes validation, immediately continue to the next phase. Do not wait for the user to say "continue", "next", "go ahead" or "approved". The workflow stops only after FINAL VALIDATION of the complete, implemented, rendered, tested, corrected and polished landing.
+
+If a phase fails validation, fix it autonomously and validate again before continuing.
+
 Follow exactly:
 
 01 DISCOVERY
@@ -92,7 +96,7 @@ Do not invent customers, testimonials, metrics or unsupported claims.
 Create:
 docs/landing-v4-discovery.md
 
-STOP after Discovery.
+After Discovery is validated, continue automatically to Phase 02. Do not stop.
 
 ## PHASE 02 — WIREFRAME
 
@@ -131,9 +135,7 @@ This list may be adjusted during Discovery only when justified.
 Create:
 docs/landing-v4-wireframe.md
 
-STOP and request approval.
-
-DO NOT generate images or implementation before approval.
+Validate the wireframe internally. If it passes, continue automatically. If it fails, correct it and validate again. Do not stop for user approval.
 
 ## PHASE 04 — ART DIRECTION
 
@@ -199,7 +201,7 @@ BACKGROUND → GLOBAL ATMOSPHERE
 
 Create an asset manifest before implementation.
 
-STOP and request asset approval.
+Validate the assets internally. If they pass, continue automatically. If they fail, regenerate/correct them and validate again. Do not stop for user approval.
 
 ## BACKGROUND
 
@@ -507,6 +509,10 @@ Never silently:
 
 Implementation ≠ redesign.
 
+## FINAL VALIDATION GATE
+
+The final response is allowed only after the complete landing has been implemented and the rendered result has passed structural, visual, responsive, accessibility, performance and runtime validation. Intermediate checkpoints never end the workflow.
+
 ## FINAL CHECKLIST
 
 Discovery ✓
@@ -537,6 +543,4 @@ Do not create assets.
 Create:
 docs/landing-v4-discovery.md
 
-Then STOP.
-
-The next phase is the wireframe and must not begin until Discovery is complete and approved.
+Then continue automatically through every remaining phase until FINAL VALIDATION. The user should never need to request the next phase.
