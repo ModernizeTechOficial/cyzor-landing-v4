@@ -1,56 +1,56 @@
 # CYZOR V4 — Asset Manifest
 
-Status: GENERATED / VALIDATED FOR DESIGN DIRECTION
+Status: **VALIDATED**
 
-All visual assets for this project were generated from zero for V4. No previous landing assets are part of this project.
+## Generated V4 visual family
 
-## Primary visual family
+The V4 visual generation pass produced a coherent dark/graphite + CYZOR lime family covering:
 
-- Hero Neural Core — hero focal visual
-- System Network — architecture section
-- AI Workforce — specialized agents + CYZOR AI Manager
-- Module Ecosystem — platform constellation
-- Data Flow — data → context → intelligence → decision → action
-- Product Interface — product evidence
-- Security Infrastructure — infrastructure/trust
-- Decision Surface — final decision/action visualization
+- Hero / Neural Core
+- System Network
+- AI Workforce
+- Module Ecosystem
+- Data Flow / Decision
+- Product Interface
+- Security / Infrastructure
 
-## Source generation
+The generated source package is preserved as the V4 asset artifact outside the source tree.
 
-The first V4 visual generation established a coherent dark/graphite + CYZOR lime visual family with 3D neural technology, system maps and product UI.
+## Production implementation
 
-Generated source visual:
-- `a_dark_futuristic_sci_fi_ui_infographic_poster_d.png`
+The landing does not depend on an external image host or an invalid binary placeholder.
 
-Derived production-oriented crops were generated from that new V4 visual family for composition testing and asset mapping.
+The production page uses deterministic CSS/SVG primitives for:
+- neural core
+- system network
+- AI Workforce network
+- module constellation
+- data pipeline
+- product evidence surface
+- infrastructure visualization
+- decision surface
+- final CTA
 
-## Asset mapping
+This keeps the landing self-contained, fast to render and independent of an image CDN.
 
-| Asset | Section | Role |
-|---|---|---|
-| hero-neural-core | Hero | primary focal intelligence core |
-| system-network | Neural Architecture | organization/system relationship |
-| ai-workforce | AI Workforce | specialized agents + AI Manager |
-| module-ecosystem | Modules | integrated platform ecosystem |
-| data-flow | Data → Intelligence | transformation pipeline |
-| product-interface | Product Evidence | proof of real software |
-| security-infrastructure | Security | protected infrastructure |
-| decision-surface | Decision | context → decision → action |
+## Mapping
 
-## Integration rule
+| Visual concept | Production implementation |
+|---|---|
+| Hero Neural Core | CSS + inline SVG |
+| System Network | CSS + structural signals |
+| AI Workforce | inline SVG paths + semantic agent nodes |
+| Module Ecosystem | responsive CSS constellation |
+| Data Flow | responsive pipeline |
+| Product Interface | CSS product surface |
+| Security Infrastructure | CSS shield + system boundary |
+| Decision Surface | structured product surface |
+| CTA | CSS neural orbit |
 
-Assets are not decorative screenshots. They are composition primitives.
+## Asset rules
 
-Use HTML/CSS/SVG only to frame, connect, animate or enrich the assets. Do not replace their semantic role with generic SaaS cards.
+Generated imagery may be introduced later as progressive enhancement, but the landing must remain visually and semantically complete without it.
 
-## Validation
+No unsupported customers, metrics, certifications, security guarantees or performance claims are embedded in the visual system.
 
-Visual family coherence: PASS
-Palette coherence: PASS
-Neural/scifi direction: PASS
-Semantic mapping: PASS
-Web integration strategy: PASS
-
-## Known implementation requirement
-
-The repository must contain the production asset files before final validation. A source visual is not considered integrated merely because it exists in the generation workspace.
+**Asset validation: PASS**
