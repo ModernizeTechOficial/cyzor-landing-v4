@@ -210,6 +210,116 @@ Exemplos: hero-neural-core.webp, ai-workforce.png, system-network.png, data-flow
 Elementos isolados: PNG transparente ou SVG quando adequado. Cenas/áreas: WebP/AVIF.
 Never place important copy inside an asset when HTML typography is more appropriate.
 
+
+# 14.1 — REGRA ABSOLUTA DE TRANSPARÊNCIA DOS ASSETS
+
+Todos os assets visuais individuais destinados a serem posicionados sobre o background da landing devem ser gerados com FUNDO TRANSPARENTE.
+
+A transparência não é opcional.
+
+## Regra
+
+Quando o asset representar um elemento isolado, objeto, interface, núcleo, agente, módulo, ilustração, elemento neural ou componente visual:
+
+- gerar com canal alpha;
+- fundo 100% transparente;
+- sem retângulo de fundo;
+- sem cor sólida atrás do objeto;
+- sem cenário incorporado;
+- sem moldura artificial;
+- sem background falso;
+- sem gradient background que faça parte do arquivo;
+- sem textura de fundo desnecessária.
+
+O asset deve existir visualmente como um elemento independente, pronto para ser colocado sobre o background produzido pelo site.
+
+## Exemplo correto
+
+hero-neural-core.png
+
+Deve conter somente o Neural Core e seus elementos visuais necessários, com o restante da imagem transparente.
+
+## Exemplo incorreto
+
+Uma imagem 1440×800 contendo Neural Core, fundo preto, grid, partículas, iluminação de toda a seção, texto e outros elementos da landing.
+
+Isso é uma composição de seção, não um asset individual.
+
+## Separação obrigatória
+
+A arquitetura visual deve ser:
+
+BACKGROUND DO SITE
++
+ASSET TRANSPARENTE
++
+HTML
++
+CARDS
++
+TIPOGRAFIA
++
+MOTION
+
+Nunca:
+
+BACKGROUND EMBUTIDO NO ASSET
++
+ASSET
++
+BACKGROUND DO SITE
+
+Isso evita caixas visuais, recortes perceptíveis, diferenças de preto, halos e perda de integração.
+
+## Transparência e dimensões
+
+Cada asset deve:
+
+1. respeitar exatamente as dimensões definidas no wireframe;
+2. respeitar o aspect ratio definido;
+3. possuir canal alpha quando for um elemento isolado;
+4. manter uma área segura adequada ao recorte;
+5. não tocar desnecessariamente nas bordas do canvas;
+6. não conter texto que deveria ser HTML;
+7. não conter elementos pertencentes a outras seções.
+
+## Formato preferencial
+
+Para assets isolados:
+- PNG RGBA quando transparência raster for necessária;
+- SVG quando o elemento puder ser vetorial;
+- WebP com alpha quando tecnicamente adequado.
+
+Para backgrounds completos da página:
+- não aplicar esta regra;
+- backgrounds podem ser opacos e devem ser tratados separadamente do sistema de assets.
+
+## VALIDAÇÃO OBRIGATÓRIA
+
+Antes de integrar qualquer asset, verificar:
+
+- possui alpha/transparência real;
+- não possui background embutido;
+- não possui halo ou borda artificial;
+- não possui cor residual ao redor do objeto;
+- não possui elementos pertencentes ao cenário;
+- mantém qualidade na dimensão definida;
+- funciona sobre o background oficial da landing.
+
+Se qualquer item falhar:
+
+REGENERAR O ASSET.
+
+Não tentar esconder um fundo incorreto usando CSS.
+
+## REGRA DE COMPOSIÇÃO
+
+A composição visual final deve simular corretamente essa separação.
+
+Na imagem de referência da landing, os assets devem parecer elementos posicionados sobre uma interface real, e não imagens retangulares coladas em uma página.
+
+O objetivo é que, na implementação final, seja possível alterar o background da seção sem precisar recriar os assets.
+
 # 15. ASSET DIMENSIONS
 
 O wireframe define a dimensão de cada asset. Portanto: não gerar primeiro e decidir o tamanho depois.
