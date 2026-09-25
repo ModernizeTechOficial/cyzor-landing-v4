@@ -1,546 +1,331 @@
-# CYZOR V4 — MASTER CREATIVE & IMPLEMENTATION PROMPT
+# CYZOR V4 — MASTER PROMPT
+## LANDING PAGE / LOW-FIDELITY → DESIGN SYSTEM → FINAL COMPOSITION → PRODUCTION ASSETS
 
-## RESET
+---
 
-This is a completely new CYZOR V4 landing project.
+# 0. OBJETIVO
 
-DO NOT reuse:
-- previous wireframes
-- previous layouts
-- previous images/assets
-- previous landing implementations
-- previous visual interpretations
+Criar a nova landing page oficial da CYZOR com qualidade visual premium e identidade própria.
 
-Everything visual must be created again from zero.
+A página deve comunicar:
 
-The project exists to create a premium, modern neural/sci-fi CYZOR landing page through a controlled sequence. Do not collapse the phases into one implementation.
+CYZOR = Neural Operating System for Business
 
-## CORE CONCEPT
+Mas o resultado final precisa parecer uma experiência digital de produto real, e não:
+- um banner;
+- um poster;
+- uma imagem conceitual;
+- uma apresentação;
+- um template SaaS;
+- um conjunto de cards;
+- uma arte de IA colocada dentro de uma página.
 
-CYZOR = NEURAL OPERATING SYSTEM FOR BUSINESS.
+O processo deve separar rigorosamente:
 
-The experience must communicate:
-- connected operations
-- real-time data
-- intelligent context
-- distributed specialized agents
-- CYZOR AI Manager
-- decision intelligence
-- action/automation
+ESTRUTURA → ESTILO → HTML → COMPOSIÇÃO VISUAL → ASSETS → CSS → POLIMENTO
 
-Visual direction:
-modern sci-fi + neural technology + premium software + system architecture + AI infrastructure.
+A estrutura definida no wireframe é a fonte de verdade da composição.
 
-Avoid:
-editorial landing pages, generic SaaS, generic AI marketing, crypto/web3, gaming/cyberpunk, purple/blue AI, excessive neon, glassmorphism, random gradients, generic dashboard layouts, card-everything and decorative sci-fi with no semantic purpose.
+# 1. REGRA ABSOLUTA DO PROCESSO
 
-Brand:
-#C8FF00 lime
-#030504 black
-#080B0A deep graphite
-#111513 graphite
-#F5F7F3 white
-#8B938D muted
+NÃO tente resolver tudo de uma vez.
+NÃO gere a landing inteira como uma única imagem.
+NÃO transforme o wireframe em uma arte bonita.
+NÃO comece pelo HTML final.
+NÃO gere assets antes de suas posições e dimensões estarem definidas.
+NÃO altere a estrutura aprovada durante a implementação sem motivo técnico documentado.
 
-Lime is an activation/signal/intelligence/CTA color, not a general decoration.
+O projeto deve passar por fases controladas.
 
-## NON-NEGOTIABLE PROCESS
-
-**END-TO-END EXECUTION:** This is a continuous workflow. Intermediate approvals/checkpoints are validation gates, NOT stopping points. After each phase passes validation, immediately continue to the next phase. Do not wait for the user to say "continue", "next", "go ahead" or "approved". The workflow stops only after FINAL VALIDATION of the complete, implemented, rendered, tested, corrected and polished landing.
-
-If a phase fails validation, fix it autonomously and validate again before continuing.
-
-Follow exactly:
+## Ordem obrigatória
 
 01 DISCOVERY
-02 WIREFRAME
-03 WIREFRAME APPROVAL
-04 ART DIRECTION
-05 ASSET GENERATION
-06 ASSET APPROVAL
-07 BACKGROUND
-08 DESIGN SYSTEM
-09 IMPLEMENTATION
-10 MOTION
-11 RESPONSIVE
-12 ACCESSIBILITY
-13 PERFORMANCE
-14 VISUAL QA
-15 FINAL POLISH
-
-Never skip a phase.
-
-Never silently change an approved concept.
-
-If implementation difficulty appears, first adapt implementation—not the concept.
-
-If a conceptual change is genuinely necessary, STOP and document:
-PROBLEM / PROPOSED CHANGE / IMPACT.
-
-## PHASE 01 — DISCOVERY
-
-Before creating images or code, analyze CYZOR as a real product:
-- product proposition
-- modules
-- organization model
-- AI Workforce
-- AI Manager
-- data/context/decision flow
-- automation
-- target audiences
-- product differentiation
-- truthful capabilities
-
-Do not invent customers, testimonials, metrics or unsupported claims.
-
-Create:
-docs/landing-v4-discovery.md
-
-After Discovery is validated, continue automatically to Phase 02. Do not stop.
-
-## PHASE 02 — WIREFRAME
-
-Create a complete wireframe before generating any visual assets.
-
-Define for every section:
-- position
-- approximate dimensions
-- hierarchy
-- content
-- visual element
-- interaction
-- transition
-- relationship to previous/next section
-- desktop composition
-- mobile recomposition
-
-Initial narrative:
-
-01 Navigation
-02 Hero / Neural Core
-03 System Activation
-04 What CYZOR Is
-05 Neural Architecture
-06 AI Workforce
-07 Module Ecosystem
-08 Data → Intelligence
-09 Product Interface
-10 Decision Surface
-11 Security / Infrastructure
-12 Final CTA
-13 Footer
-
-This list may be adjusted during Discovery only when justified.
-
-Create:
-docs/landing-v4-wireframe.md
-
-Validate the wireframe internally. If it passes, continue automatically. If it fails, correct it and validate again. Do not stop for user approval.
-
-## PHASE 04 — ART DIRECTION
-
-After wireframe approval, define:
-- visual thesis
-- lighting
-- materials
-- depth
-- composition
-- density
-- contrast
-- neural language
-- technical annotation language
-- product evidence
-- motion language
-- responsive art direction
-
-Every major visual must have a semantic purpose.
-
-Create:
-docs/landing-v4-art-direction.md
+02 LOW-FIDELITY WIREFRAME
+03 CARD VISUAL SYSTEM
+04 HTML STRUCTURE
+05 FINAL VISUAL COMPOSITION
+06 USER APPROVAL — FINAL COMPOSITION
+07 INDIVIDUAL ASSET GENERATION
+08 BACKGROUND + CSS + DESIGN SYSTEM IMPLEMENTATION
+09 ASSET INTEGRATION
+10 MOTION + RESPONSIVE
+11 ACCESSIBILITY + PERFORMANCE
+12 VISUAL QA + POLISH
+13 FINAL VALIDATION
 
-## PHASE 05 — ASSETS
-
-Generate every asset from zero, specifically for CYZOR V4.
-
-Required visual family:
-
-01 HERO NEURAL CORE
-02 SYSTEM NETWORK
-03 AI WORKFORCE NETWORK
-04 DATA FLOW
-05 PRODUCT INTERFACE
-06 MODULE ECOSYSTEM
-07 DECISION VISUAL
-08 SECURITY / INFRASTRUCTURE
-09 FINAL CTA VISUAL
-10 BACKGROUND / NEURAL GRID
-11 MICRO TECHNICAL ELEMENTS
-
-Assets should be modular and web-ready.
-
-Prefer transparent PNG/SVG for isolated elements and WebP/AVIF for backgrounds where appropriate.
-
-Do not generate one giant image containing the entire page.
-
-Do not embed copy into assets when HTML typography is more appropriate.
-
-## ASSET MAPPING
+# 2. REGRA DE PARADA
 
-Each asset must have a documented purpose:
+Existe apenas um checkpoint obrigatório com o usuário: APROVAÇÃO DA COMPOSIÇÃO VISUAL FINAL.
 
-NEURAL CORE → HERO
-SYSTEM NETWORK → ARCHITECTURE
-AI WORKFORCE → AI SECTION
-DATA FLOW → DATA/CONTEXT/INTELLIGENCE/DECISION
-PRODUCT INTERFACE → PRODUCT EVIDENCE
-MODULE ECOSYSTEM → PLATFORM
-DECISION VISUAL → DECISION SURFACE
-SECURITY → INFRASTRUCTURE
-CTA VISUAL → FINAL CTA
-BACKGROUND → GLOBAL ATMOSPHERE
+Até chegar nessa etapa, execute automaticamente:
+Discovery → Wireframe → Card Style → HTML → Final Visual Composition.
 
-Create an asset manifest before implementation.
+Quando a composição visual final estiver pronta:
+1. apresente a composição;
+2. descreva brevemente o que foi definido;
+3. peça ao usuário para confirmar o layout final;
+4. PARE.
 
-Validate the assets internally. If they pass, continue automatically. If they fail, regenerate/correct them and validate again. Do not stop for user approval.
+Não gere os assets finais antes da confirmação.
+Não escreva o CSS final antes da confirmação.
+Não integre os assets finais antes da confirmação.
+Não avance automaticamente dessa etapa.
 
-## BACKGROUND
+Após o usuário confirmar:
+Continue automaticamente: Asset Generation → CSS → Integration → Motion → Responsive → Accessibility → Performance → Visual QA → Final Polish → Final Validation.
+Depois da confirmação do layout final, não peça novas aprovações intermediárias.
+Se algo falhar, corrija e continue.
 
-Create a dedicated background system:
-- deep black/graphite base
-- subtle neural grid
-- controlled depth
-- restrained noise
-- structural lines
-- sparse particles
-- localized lime energy
-- atmospheric lighting
+# 3. RESET VISUAL
 
-Background must support content, never compete with it.
+O projeto deve ser tratado como uma nova criação.
+Não reutilizar landing anterior, wireframe anterior, composição anterior, HTML anterior, CSS anterior, assets anteriores, imagens anteriores ou interpretações anteriores.
+As skills de UI/UX presentes em .agents/skills podem ser usadas como referência de construção, mas o layout desta execução deve nascer novamente deste processo.
 
-## DESIGN SYSTEM
+# 4. DIREÇÃO DE PRODUTO
 
-Define:
-- color tokens
-- typography
-- spacing
-- grid
-- radii
-- borders
-- glow
-- surfaces
-- z-index
-- breakpoints
-- motion durations
-- accent budget
-- motion budget
+A CYZOR é uma plataforma modular de operação empresarial com CRM, ERP, Projects, People, Docs, BI, Automations, Finance, Products, Stock, POS, Agenda, AI Workforce e CYZOR AI Manager.
 
-Reusable primitives:
-- buttons
-- labels
-- telemetry
-- badges where meaningful
-- technical markers
-- module nodes
-- data indicators
-- system states
-- section headers
+Conceito central:
+empresa → módulos → dados → contexto → agentes → inteligência → decisão → ação
 
-## IMPLEMENTATION
+# 5. DIREÇÃO VISUAL
 
-Only after wireframe + assets are approved.
+A direção final deve ser tecnológica, sofisticada, contemporânea, premium, neural, cinematográfica com controle, extremamente bem composta, orientada a produto e visualmente memorável.
 
-Implementation must be derived from:
-WIRE­FRAME + ART DIRECTION + ASSETS + DESIGN SYSTEM.
+Paleta base: #C8FF00, #030504, #080B0A, #111513, #F5F7F3, #8B938D.
 
-Do not reinterpret the design while coding.
+O lime representa ativação, inteligência, sinal, estado, foco e ação. Não usar lime como preenchimento indiscriminado.
 
-Build layers:
+Evitar: cyberpunk, estética gamer, Web3, crypto, roxo/azul como linguagem principal de IA, excesso de neon, excesso de glow, glassmorphism genérico, gradientes aleatórios, grids decorativos sem função, excesso de cards, dashboards falsos, cérebro/robô/circuitos clichês, posterização, composição de banner, estética de thumbnail e arte de IA substituindo design de interface.
 
-BACKGROUND
-→ ATMOSPHERE
-→ SYSTEM STRUCTURE
-→ ASSETS
-→ UI
-→ TYPOGRAPHY
-→ MOTION
+# 6. FASE 01 — DISCOVERY
 
-## HERO
+Antes de qualquer criação visual, analisar proposta da CYZOR, arquitetura, módulos, AI Workforce, AI Manager, fluxo de dados, contexto, decisão, automações, produto, público, diferenciais reais, limitações e conteúdo que pode ser afirmado com segurança.
 
-The Hero is the strongest visual composition.
+Criar docs/landing-v4-discovery.md.
 
-It must contain:
-- navigation
-- system state
-- concise headline
-- supporting copy
-- primary CTA
-- secondary CTA
-- Neural Core
-- telemetry
-- system signals
+A Discovery deve responder: O que a CYZOR é? Qual problema resolve? Como explicar isso rapidamente? Qual narrativa a landing deve seguir? Quais são as provas visuais necessárias? Quais informações devem ser HTML? Quais informações devem virar assets? Quais elementos precisam de interação? Quais são apenas atmosféricos? O que não deve aparecer?
 
-The Neural Core is the visual focal point.
+Depois de concluir, seguir automaticamente para a Fase 02.
 
-Do not create a generic centered text block with an image underneath.
+# 7. FASE 02 — LOW-FIDELITY WIREFRAME
 
-## SYSTEM ACTIVATION
+ESTA É A FASE MAIS IMPORTANTE PARA A ESTRUTURA.
 
-Create a transition such as:
+O wireframe NÃO é uma arte. O wireframe NÃO deve parecer um banner. O wireframe NÃO deve ser bonito. O wireframe deve parecer um projeto técnico de layout.
 
-SYSTEM INITIALIZING
-→ NETWORK ONLINE
-→ AI WORKFORCE ACTIVE
-→ CONTEXT SYNCHRONIZED
+Usar somente fundo neutro, blocos, retângulos, linhas, círculos simples, grids, placeholders, texto de identificação, medidas, proporções e setas.
+Pode usar apenas cinza, preto, branco e um tom discreto para marcação.
 
-It should feel like an actual system state.
+Não usar imagens finais, renders, efeitos 3D, glow, neon, texturas, partículas, ilustrações, fotografias ou composição cinematográfica.
 
-## CYZOR CONCEPT
+O wireframe deve definir para cada seção: ordem, posição, largura, altura, grid, alinhamento, margens, espaçamento, hierarquia, headline, texto, CTA, cards, áreas de imagem, áreas de ilustração, áreas de gráfico, áreas de assets, navegação, footer e comportamento mobile.
 
-Explain CYZOR as a unified infrastructure connecting:
-operations + data + people + intelligence.
+MUITO IMPORTANTE: cada futura área visual deve ser explicitamente marcada.
+Exemplos de rótulos: [ASSET: HERO-NEURAL-CORE], [ASSET: AI-WORKFORCE], [ASSET: PRODUCT-SCREEN], [ASSET: DATA-FLOW].
 
-Avoid generic three-card feature sections.
+Cada placeholder deve conter nome, função, posição, largura aproximada, altura aproximada, proporção, comportamento desktop, comportamento mobile, tipo de arquivo esperado e fundo transparente ou não.
 
-## NEURAL ARCHITECTURE
+O wireframe deve deixar absolutamente claro: aqui ainda entrará um asset visual premium posteriormente.
 
-Visualize:
-organization → modules → data → people → agents → intelligence → decisions.
+# 8. ESTRUTURA DA LANDING
 
-Use the System Network asset as the central visual.
+A estrutura deve ser definida pelo wireframe. Uma narrativa inicial possível é: Navigation, Hero, Product/System Introduction, System Architecture, AI Workforce, Module Ecosystem, Data → Context → Intelligence → Decision, Product Evidence, Security/Infrastructure, Decision/Business Impact, Final CTA, Footer.
 
-## AI WORKFORCE
+A quantidade final de seções deve ser determinada pela Discovery e pelo wireframe. Não criar seções apenas para preencher espaço.
 
-Show specialized agents such as:
-CRM / ERP / PROJECTS / FINANCE / PEOPLE / BI
+# 9. WIREFRAME NÃO É MOCKUP FINAL
 
-connected to:
-CYZOR AI MANAGER
+O wireframe deve responder: Onde cada coisa ficará?
+Não deve responder: Como a arte final ficará?
+A arte final será criada posteriormente.
 
-Agents are specialized system components, not simple chatbots.
+# 10. FASE 03 — CARD VISUAL SYSTEM
 
-## MODULE ECOSYSTEM
+Depois que o wireframe estrutural estiver definido, criar uma imagem de referência exclusiva para o sistema visual dos cards.
 
-Represent:
-CRM
-ERP
-PROJECTS
-PEOPLE
-DOCS
-BI
-AUTOMATIONS
-FINANCE
-PRODUCTS
-STOCK
-POS
-AGENDA
+Esta imagem NÃO é a landing. É um STYLE BOARD DE COMPONENTES.
 
-Prefer ecosystem/network/constellation/layer composition over 12 identical cards.
+Deve mostrar somente exemplos de card padrão, card destacado, card de métrica, card de módulo, card de informação, card de estado, card com imagem e card com ação.
 
-## DATA → INTELLIGENCE
+O objetivo é definir cor, borda, espessura, raio, superfície, contraste, iluminação, glow, textura, profundidade, iconografia, tipografia, estados, hover, active, selected e disabled.
 
-Visual sequence:
+A imagem deve mostrar claramente: este é o padrão visual que será reutilizado em toda a landing.
+Não criar uma página inteira nessa fase. Não criar banner. Não criar hero. Não criar composição de landing.
 
-DATA
-→ CONTEXT
-→ INTELLIGENCE
-→ DECISION
-→ ACTION
+Documentar em docs/landing-v4-card-system.md.
 
-Use the Data Flow asset and meaningful signal motion.
+# 11. FASE 04 — HTML STRUCTURE
 
-## PRODUCT EVIDENCE
+Agora criar o HTML. Mas ainda NÃO é a landing final.
 
-Show CYZOR as real software.
+O HTML deve conter estrutura das seções, textos, títulos, CTAs, cards, grids, containers, navegação, footer e placeholders dos assets.
 
-Use the Product Interface asset and, where available, faithful product UI fragments.
+O HTML NÃO deve conter ainda imagens finais, renders finais, efeitos gráficos complexos, background artístico final, composição visual definitiva ou assets premium finais.
 
-Do not invent fake product metrics.
+O HTML deve parecer um esqueleto funcional e navegável da landing.
 
-## DECISION SURFACE
+Os placeholders devem respeitar exatamente as áreas definidas no wireframe.
+Exemplo: <div class="visual-placeholder" data-asset="hero-neural-core"></div>
 
-Show context, signals, metrics, insight, decision and action.
+O HTML deve validar a estrutura antes da etapa visual.
 
-Do not present fabricated numbers as real data.
+# 12. FASE 05 — FINAL VISUAL COMPOSITION
 
-## SECURITY / INFRASTRUCTURE
+Somente agora criar uma imagem de referência da landing final.
 
-Communicate protected infrastructure, layers and secure signals without unsupported technical claims.
+Esta imagem deve representar o HTML criado, a estrutura do wireframe, o sistema de cards, a direção de arte, a hierarquia, os espaços, a narrativa, a atmosfera final e os futuros assets premium.
 
-## FINAL CTA
+IMPORTANTE: a imagem final deve parecer uma landing page completa apresentada em uma tela, e não um poster, banner, arte conceitual, moodboard ou coleção de imagens.
 
-The ending should feel like completing the system journey.
+Deve mostrar a página como uma composição de interface real: navegação real, hero, conteúdo, cards, áreas de produto, imagens, espaçamento, ritmo vertical e continuidade entre seções.
 
-Use the CTA visual.
+Os elementos visuais premium podem aparecer nesta composição como representação final, mas continuam sendo apenas referência visual nesta fase. Ainda não são assets de produção.
 
-Concept:
-SYSTEM COMPLETE → ACTIVATE CYZOR
+# 13. CHECKPOINT ÚNICO — APROVAÇÃO DO LAYOUT FINAL
 
-Avoid generic SaaS CTA treatment.
+Depois de gerar a composição visual final: PARAR.
 
-## MOTION
+Apresentar a imagem da composição, um breve resumo, as principais decisões visuais e a lista dos assets que serão produzidos.
 
-Motion must communicate:
-- signal
-- connection
-- processing
-- synchronization
-- state
-- response
+Perguntar exatamente em essência: Este é o layout final que devo transformar em produção?
 
-Use:
-- neural pulse
-- signal travel
-- node breathing
-- data propagation
-- layer activation
-- scroll reveal
-- controlled depth
-- micro-interactions
+Não avançar até o usuário confirmar. Não gerar assets de produção antes da confirmação. Não escrever o CSS final antes da confirmação. Não integrar os assets finais antes da confirmação.
 
-Avoid bounce, wobble, perpetual floating and animation without semantic meaning.
+# 14. FASE 07 — INDIVIDUAL ASSET GENERATION
 
-Always support prefers-reduced-motion.
+Depois da aprovação, gerar os assets individualmente.
 
-## RESPONSIVE
+REGRA ABSOLUTA: UM ASSET = UMA GERAÇÃO.
 
-Desktop: complete spatial composition.
+Nunca gerar a landing inteira e recortar artificialmente depois. Nunca gerar uma única imagem contendo vários assets. Cada asset deve nascer separado.
 
-Tablet: reduce density while preserving hierarchy.
+Cada asset deve seguir exatamente o wireframe.
 
-Mobile: recompose, do not merely shrink.
+Antes de gerar cada um, verificar nome, função, largura, altura, aspect ratio, desktop size, mobile behavior, transparência, área segura, posição, contraste e relação com o card system.
 
-Narrative becomes:
+Exemplos: hero-neural-core.webp, ai-workforce.png, system-network.png, data-flow.png, product-interface.webp, security-infrastructure.png, module-ecosystem.png.
 
-CORE
-→ SYSTEM
-→ AI
-→ MODULES
-→ DATA
-→ PRODUCT
-→ DECISION
-→ CTA
+Elementos isolados: PNG transparente ou SVG quando adequado. Cenas/áreas: WebP/AVIF.
+Never place important copy inside an asset when HTML typography is more appropriate.
 
-## ACCESSIBILITY
+# 15. ASSET DIMENSIONS
 
-Require:
-- semantic HTML
-- keyboard navigation
-- visible focus
-- accessible labels
-- sufficient contrast
-- no color-only state
-- reduced motion
-- adequate touch targets
+O wireframe define a dimensão de cada asset. Portanto: não gerar primeiro e decidir o tamanho depois.
 
-## PERFORMANCE
+Fluxo correto: WIREFRAME → DIMENSÃO → ASPECT RATIO → PROMPT DO ASSET → GERAÇÃO → VALIDAÇÃO → INTEGRAÇÃO.
 
-Optimize:
-- image formats
-- dimensions
-- lazy loading where appropriate
-- fonts
-- DOM complexity
-- animation cost
+Se o asset não respeitar a área definida: regenerar. Não corrigir deformando via CSS.
 
-Prefer transform/opacity for animation.
+# 16. ASSET MANIFEST
 
-## COPY
+Criar docs/landing-v4-assets.md.
 
-Copy must be:
-- concise
-- technological
-- precise
-- confident
-- product-native
+Para cada asset registrar: Asset, Seção, Função, Desktop, Mobile, Ratio, Tipo, Transparente.
 
-Avoid generic phrases such as:
-"Revolutionize your business with AI."
-"The future has arrived."
-"Unlock the power of AI."
+O manifest é obrigatório. Nenhum asset entra na produção sem estar no manifest.
 
-Prefer concepts such as:
-"Sua empresa opera como um sistema inteligente."
-"Dados, operações, pessoas e inteligência no mesmo contexto."
-"Transforme operação em contexto. Contexto em inteligência. Inteligência em decisão."
+# 17. FASE 08 — BACKGROUND + CSS + DESIGN SYSTEM
 
-Never make unsupported claims.
+Somente após os assets existirem implementar background, surfaces, cards, borders, typography, grid, spacing, glow, shadows, gradients controlados, states, responsive tokens e animation tokens.
 
-## VISUAL QA
+O CSS deve reproduzir o sistema visual definido na composição final. Não redesenhar a landing durante essa etapa.
 
-Do not consider the project finished merely because it compiles.
+# 18. FASE 09 — ASSET INTEGRATION
 
-Compare:
-WIREFRAME ↔ IMPLEMENTATION
-ART DIRECTION ↔ IMPLEMENTATION
-ASSETS ↔ IMPLEMENTATION
+Substituir cada placeholder HTML pelo asset correspondente.
+A posição deve seguir o wireframe. A dimensão deve seguir o manifest. A composição deve seguir a imagem final aprovada.
 
-Check:
-- composition
-- hierarchy
-- typography
-- wrapping
-- spacing
-- contrast
-- asset quality
-- motion
-- responsive
-- accessibility
-- performance
-- runtime errors
+Se o resultado divergir visualmente: corrigir CSS/layout, não alterar silenciosamente a estrutura.
 
-## ANTI-GENERIC GATE
+# 19. FASE 10 — MOTION
 
-Remove the logo mentally.
+Motion deve existir apenas quando tiver função. Usar signal travel, glow response, node activation, reveal, hover, scroll progression, state transitions e subtle parallax quando necessário.
 
-If the page could be mistaken for another SaaS, AI startup, Web3 product or generic dashboard, redesign the composition.
+Evitar bounce, excesso de floating, efeitos contínuos sem função e animação em tudo.
+Implementar prefers-reduced-motion.
 
-Do not solve genericity by adding more glow or gradients.
+# 20. FASE 11 — RESPONSIVE
 
-## ANTI-DRIFT GATE
+Não reduzir simplesmente o desktop. Recompor.
 
-Never silently:
-- change the concept
-- remove sections
-- replace approved assets
-- redesign the wireframe
-- switch art direction
-- replace meaningful visuals with generic CSS/SVG
-- collapse the page into repeated cards
+Desktop: experiência espacial completa. Tablet: reduzir densidade preservando hierarquia. Mobile: priorizar mensagem, produto, prova visual, inteligência e CTA.
 
-Implementation ≠ redesign.
+Cada asset deve possuir comportamento mobile definido no wireframe. Se necessário, alterar crop, mudar posição, empilhar, ocultar elementos secundários, trocar composição ou reduzir densidade. Nunca deformar assets.
 
-## FINAL VALIDATION GATE
+# 21. FASE 12 — ACCESSIBILITY
 
-The final response is allowed only after the complete landing has been implemented and the rendered result has passed structural, visual, responsive, accessibility, performance and runtime validation. Intermediate checkpoints never end the workflow.
+Validar HTML semântico, keyboard navigation, focus visible, contraste, labels, alt text, touch targets, reduced motion, leitura por screen reader e headings hierárquicos.
 
-## FINAL CHECKLIST
+# 22. FASE 13 — PERFORMANCE
 
-Discovery ✓
-Wireframe ✓
-Wireframe approval ✓
-Art direction ✓
-Assets ✓
-Asset approval ✓
-Background ✓
-Design system ✓
-Implementation ✓
-Motion ✓
-Responsive ✓
-Accessibility ✓
-Performance ✓
-Visual QA ✓
-Final polish ✓
+Validar peso das imagens, dimensões, formatos, lazy loading, fontes, DOM, animações, CLS e carregamento inicial.
 
-## FIRST ACTION
+# 23. FASE 14 — VISUAL QA
 
-START ONLY WITH PHASE 01 — DISCOVERY.
+Comparar diretamente WIREFRAME vs HTML vs FINAL COMPOSITION vs IMPLEMENTATION.
 
-Do not generate images.
-Do not write landing implementation code.
-Do not create components.
-Do not create assets.
+Verificar posição, proporção, hierarquia, espaçamento, typography, wrapping, cards, borders, assets, iluminação, contraste, responsive e motion.
 
-Create:
-docs/landing-v4-discovery.md
+A pergunta principal é: O site implementado realmente parece a composição aprovada?
+Se não: corrigir.
 
-Then continue automatically through every remaining phase until FINAL VALIDATION. The user should never need to request the next phase.
+# 24. FASE 15 — FINAL POLISH
+
+Corrigir pequenos desalinhamentos, espaçamentos, escala, tipografia, crop, bordas, glow, contraste, motion, mobile e estados.
+Não adicionar elementos apenas para deixar mais bonito. Cada elemento precisa ter função.
+
+# 25. ANTI-BANNER GATE
+
+Em todas as fases visuais perguntar: Estou criando uma interface ou uma imagem promocional?
+
+Se parecer banner, poster, capa, thumbnail ou infographic, parar e corrigir.
+A landing deve parecer uma página navegável de produto.
+
+# 26. ANTI-GENERIC GATE
+
+Remover o logo mentalmente. Se a página puder ser confundida com SaaS genérico, startup de IA, template, Web3 ou dashboard template, refazer a composição.
+Não resolver genericidade adicionando neon. Resolver com composição, hierarquia, tipografia, proporção, produto e direção de arte.
+
+# 27. ANTI-DRIFT GATE
+
+Depois da aprovação da composição final, não alterar silenciosamente estrutura, número de seções, posição dos assets, sistema de cards, proporções, hierarquia ou art direction.
+
+Se existir um bloqueio técnico real: documentar, escolher solução tecnicamente equivalente e preservar a aparência aprovada.
+
+# 28. REGRA SOBRE TEXTO
+
+Texto importante deve permanecer em HTML.
+Assets visuais devem cuidar de atmosfera, objetos, interfaces, iluminação, elementos gráficos e composição visual.
+Não usar imagem para substituir headline, parágrafo, CTA, navegação, títulos de seção ou informações críticas.
+
+# 29. REGRA SOBRE CARDS
+
+Cards devem seguir o Card Visual System definido na Fase 03.
+Não criar uma nova linguagem visual para cada seção.
+O sistema deve ser consistente, mas não repetitivo.
+
+# 30. REGRA SOBRE IMAGENS GERADAS
+
+As imagens geradas devem servir ao layout. Nunca o contrário.
+Errado: imagem bonita → tentar encaixar na página.
+Correto: wireframe → posição/dimensão → necessidade visual → prompt → asset → integração.
+
+# 31. REGRA DE CONTINUIDADE
+
+Antes da aprovação final: não parar entre fases. Executar automaticamente Discovery → Wireframe → Card System → HTML → Final Composition → PARAR PARA APROVAÇÃO.
+
+Depois da aprovação: Assets → CSS → Integration → Motion → Responsive → Accessibility → Performance → QA → Polish → Final Validation.
+
+# 32. PRIMEIRA AÇÃO
+
+Começar somente pela FASE 01 — DISCOVERY.
+
+Criar docs/landing-v4-discovery.md.
+
+Não gerar imagem final. Não gerar asset. Não criar CSS final. Não criar landing final.
+
+Após concluir Discovery, continuar automaticamente até a Fase 05.
+
+A única parada intermediária será a aprovação da composição visual final.
