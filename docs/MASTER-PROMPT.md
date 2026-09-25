@@ -56,33 +56,39 @@ O projeto deve passar por fases controladas.
 
 # 1.1 — REGRA ABSOLUTA DE QUANTIDADE DE GERAÇÕES VISUAIS
 
-A execução visual deve ser controlada. Não gerar várias imagens tentando explorar uma mesma fase.
+A execução visual é determinística. Cada fase visual possui UMA ÚNICA saída oficial.
 
-Existe somente:
-- 01 wireframe visual oficial;
-- 01 card visual system oficial;
-- 01 final visual composition oficial;
-- 01 geração por asset de produção.
+### Antes da aprovação
 
-Portanto:
+1. Discovery: 0 imagens.
+2. Wireframe: 1 imagem total.
+3. Card Visual System: 1 imagem total.
+4. HTML Structure: 0 imagens.
+5. Final Visual Composition: 1 imagem total.
 
-WIREFRAME = 1 IMAGEM
-CARD SYSTEM = 1 IMAGEM
-FINAL COMPOSITION = 1 IMAGEM
-CADA ASSET = 1 GERAÇÃO
+Portanto, antes da aprovação existem no máximo 3 imagens geradas em todo o projeto.
 
-Não criar variações A/B/C, múltiplos wireframes, wireframes alternativos, moodboards extras, imagens de referência adicionais, painéis que misturem várias fases ou composições alternativas sem solicitação explícita do usuário.
+### Proibição explícita
 
-## Regra de falha técnica
+NÃO gerar segunda imagem do wireframe, segunda imagem do card system, segunda imagem da composição final, variações A/B/C, alternativas de layout, versões desktop e mobile como imagens separadas, moodboards, painéis comparativos, imagens de exploração, imagens para testar uma ideia, imagens para documentação ou imagens adicionais porque a primeira parece menos bonita.
 
-Se uma geração obrigatória falhar, for cancelada, vier corrompida ou não puder ser usada tecnicamente, pode-se regenerar somente aquela geração que falhou, preservando exatamente o briefing da mesma fase.
+Desktop e mobile do wireframe, quando necessários, devem estar dentro da mesma imagem.
 
-Se a imagem estiver tecnicamente válida, mas visualmente diferente do esperado, não gerar outra automaticamente. Corrigir a especificação/documentação antes de qualquer nova geração e somente então prosseguir conforme o processo.
+Se houver necessidade de especificações adicionais, escrevê-las nos documentos .md, nunca criar outra imagem.
 
-## Regra de saída oficial
+### Falha de geração
 
-Cada fase visual possui uma única saída oficial: WIREframe oficial, CARD SYSTEM oficial ou FINAL COMPOSITION oficial. Essas referências são suficientes para conduzir o processo visual até a aprovação.
+Se uma chamada de geração falhar tecnicamente, for cancelada ou retornar um arquivo inválido/incompleto, somente essa chamada pode ser repetida uma vez, usando exatamente o mesmo briefing.
 
+Se a chamada retornar uma imagem válida, a fase está concluída. Não gerar outra imagem automaticamente para comparar, melhorar ou explorar.
+
+### Regra operacional para ferramentas de imagem
+
+Quando uma fase exigir imagem, fazer uma única chamada à ferramenta de geração de imagem e aguardar seu resultado.
+
+Depois que uma imagem válida retornar: considerar a fase concluída; não chamar a ferramenta de imagem novamente para aquela fase; salvar/documentar a saída; avançar para a próxima fase.
+
+Nunca fazer múltiplas chamadas de geração em paralelo ou em sequência para a mesma fase.
 # 2. REGRA DE PARADA
 
 Existe apenas um checkpoint obrigatório com o usuário: APROVAÇÃO DA COMPOSIÇÃO VISUAL FINAL.
