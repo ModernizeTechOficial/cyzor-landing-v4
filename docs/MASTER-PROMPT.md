@@ -53,6 +53,36 @@ O projeto deve passar por fases controladas.
 12 VISUAL QA + POLISH
 13 FINAL VALIDATION
 
+
+# 1.1 — REGRA ABSOLUTA DE QUANTIDADE DE GERAÇÕES VISUAIS
+
+A execução visual deve ser controlada. Não gerar várias imagens tentando explorar uma mesma fase.
+
+Existe somente:
+- 01 wireframe visual oficial;
+- 01 card visual system oficial;
+- 01 final visual composition oficial;
+- 01 geração por asset de produção.
+
+Portanto:
+
+WIREFRAME = 1 IMAGEM
+CARD SYSTEM = 1 IMAGEM
+FINAL COMPOSITION = 1 IMAGEM
+CADA ASSET = 1 GERAÇÃO
+
+Não criar variações A/B/C, múltiplos wireframes, wireframes alternativos, moodboards extras, imagens de referência adicionais, painéis que misturem várias fases ou composições alternativas sem solicitação explícita do usuário.
+
+## Regra de falha técnica
+
+Se uma geração obrigatória falhar, for cancelada, vier corrompida ou não puder ser usada tecnicamente, pode-se regenerar somente aquela geração que falhou, preservando exatamente o briefing da mesma fase.
+
+Se a imagem estiver tecnicamente válida, mas visualmente diferente do esperado, não gerar outra automaticamente. Corrigir a especificação/documentação antes de qualquer nova geração e somente então prosseguir conforme o processo.
+
+## Regra de saída oficial
+
+Cada fase visual possui uma única saída oficial: WIREframe oficial, CARD SYSTEM oficial ou FINAL COMPOSITION oficial. Essas referências são suficientes para conduzir o processo visual até a aprovação.
+
 # 2. REGRA DE PARADA
 
 Existe apenas um checkpoint obrigatório com o usuário: APROVAÇÃO DA COMPOSIÇÃO VISUAL FINAL.
@@ -101,6 +131,10 @@ Evitar: cyberpunk, estética gamer, Web3, crypto, roxo/azul como linguagem princ
 
 # 6. FASE 01 — DISCOVERY
 
+## Regra visual da Discovery
+
+A Discovery NÃO gera imagem. Não gerar wireframe, moodboard, mockup, hero, card board ou landing visual nesta fase.
+
 Antes de qualquer criação visual, analisar proposta da CYZOR, arquitetura, módulos, AI Workforce, AI Manager, fluxo de dados, contexto, decisão, automações, produto, público, diferenciais reais, limitações e conteúdo que pode ser afirmado com segurança.
 
 Criar docs/landing-v4-discovery.md.
@@ -110,6 +144,14 @@ A Discovery deve responder: O que a CYZOR é? Qual problema resolve? Como explic
 Depois de concluir, seguir automaticamente para a Fase 02.
 
 # 7. FASE 02 — LOW-FIDELITY WIREFRAME
+
+## REGRA DE GERAÇÃO
+
+Gerar EXATAMENTE 01 imagem de wireframe. Essa imagem é a única referência visual oficial da estrutura.
+
+Não gerar segunda versão, versão desktop separada, versão mobile separada ou versão melhorada. Desktop e mobile devem aparecer na mesma imagem quando necessário.
+
+Se forem necessárias especificações adicionais, registrar em docs/landing-v4-wireframe.md, e não criar outra imagem.
 
 ESTA É A FASE MAIS IMPORTANTE PARA A ESTRUTURA.
 
@@ -143,6 +185,12 @@ A arte final será criada posteriormente.
 
 # 10. FASE 03 — CARD VISUAL SYSTEM
 
+## REGRA DE GERAÇÃO
+
+Gerar EXATAMENTE 01 imagem.
+
+Essa imagem é um STYLE BOARD DE COMPONENTES, não uma landing. Não incluir hero completo, navegação completa, seções da landing, footer, composição vertical da página, mockup de página inteira, wireframe ou moodboard geral.
+
 Depois que o wireframe estrutural estiver definido, criar uma imagem de referência exclusiva para o sistema visual dos cards.
 
 Esta imagem NÃO é a landing. É um STYLE BOARD DE COMPONENTES.
@@ -157,6 +205,10 @@ Não criar uma página inteira nessa fase. Não criar banner. Não criar hero. N
 Documentar em docs/landing-v4-card-system.md.
 
 # 11. FASE 04 — HTML STRUCTURE
+
+## REGRA DE GERAÇÃO
+
+Não gerar imagem nesta fase. O HTML é código real e deve ser validado como código.
 
 Agora criar o HTML. Mas ainda NÃO é a landing final.
 
@@ -173,6 +225,12 @@ O HTML deve validar a estrutura antes da etapa visual.
 
 # 12. FASE 05 — FINAL VISUAL COMPOSITION
 
+## REGRA DE GERAÇÃO
+
+Gerar EXATAMENTE 01 imagem. Esta é a única imagem visual da landing apresentada para aprovação.
+
+Não gerar alternativas, variações, segunda composição, outra direção de arte, outro hero ou outro layout sem solicitação explícita do usuário.
+
 Somente agora criar uma imagem de referência da landing final.
 
 Esta imagem deve representar o HTML criado, a estrutura do wireframe, o sistema de cards, a direção de arte, a hierarquia, os espaços, a narrativa, a atmosfera final e os futuros assets premium.
@@ -184,6 +242,8 @@ Deve mostrar a página como uma composição de interface real: navegação real
 Os elementos visuais premium podem aparecer nesta composição como representação final, mas continuam sendo apenas referência visual nesta fase. Ainda não são assets de produção.
 
 # 13. CHECKPOINT ÚNICO — APROVAÇÃO DO LAYOUT FINAL
+
+A aprovação refere-se a UMA ÚNICA composição visual. Se o usuário aprovar, ela se torna a fonte de verdade visual da implementação. Se o usuário pedir alteração, alterar a especificação necessária e gerar UMA nova composição oficial para aprovação; não gerar várias opções para escolha, salvo solicitação explícita.
 
 Depois de gerar a composição visual final: PARAR.
 
@@ -423,6 +483,10 @@ Errado: imagem bonita → tentar encaixar na página.
 Correto: wireframe → posição/dimensão → necessidade visual → prompt → asset → integração.
 
 # 31. REGRA DE CONTINUIDADE
+
+Não criar imagens adicionais entre as fases. Antes da aprovação: Discovery → Wireframe (1 imagem) → Card System (1 imagem) → HTML (sem imagem) → Final Composition (1 imagem) → PARAR PARA APROVAÇÃO.
+
+Depois da aprovação: Assets (1 geração por asset) → CSS → Integration → Motion → Responsive → Accessibility → Performance → QA → Polish → Final Validation.
 
 Antes da aprovação final: não parar entre fases. Executar automaticamente Discovery → Wireframe → Card System → HTML → Final Composition → PARAR PARA APROVAÇÃO.
 
